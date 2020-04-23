@@ -89,7 +89,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      color: widget.backgroundColor,
+      color: Colors.purple,//widget.backgroundColor,
       height: widget.height,
       child: Stack(
         overflow: Overflow.visible,
@@ -111,6 +111,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                   -(1 - _buttonHide) * 80,
                 ),
                 child: Material(
+                  elevation: 3,
                   color: widget.buttonBackgroundColor ?? widget.color,
                   type: MaterialType.circle,
                   child: Padding(

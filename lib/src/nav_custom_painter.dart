@@ -43,6 +43,8 @@ class NavCustomPainter extends CustomPainter {
       ..lineTo(size.width, size.height)
       ..lineTo(0, size.height)
       ..close();
+    
+    canvas.drawShadow(path.shift(Offset(0, -3)), Colors.black, 2.0, true);
     canvas.drawPath(path, paint);
   }
 
